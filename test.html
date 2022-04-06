@@ -31,10 +31,17 @@
             margin-top: -1px;
             border: 1px solid #000;
         }
+
+        a {
+            text-decoration: none;
+
+        }
     </style>
 </head>
 
 <body>
+    <a href="./test1.html" class="asd" target="asd">点击跳转</a>
+    <input type="text">
     <ul>
         <li>1</li>
         <li>2</li>
@@ -46,6 +53,17 @@
         <li>8</li>
         <li>9</li>
     </ul>
+    <iframe src="" frameborder="0" name="asd"></iframe>
+    <script>
+        (function () {
+            document.querySelector('.asd').addEventListener('click', function (e) {
+                console.log(e.target);
+            })
+            document.querySelector('input').addEventListener('keyup', function (e) {
+                console.log(e.key);
+            })
+        })()
+    </script>
 </body>
 
 </html>
