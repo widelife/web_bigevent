@@ -28,7 +28,7 @@ $('#form_reg').on('submit',function(e){
     }
     e.preventDefault()
     $.post('http://www.liulongbin.top:3007/api/reguser',iptMessage,function(res){
-        console.log(res);
+        // console.log(res);
         if(res.status !==0) {
             return layer.msg(res.message)
         }

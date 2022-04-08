@@ -21,7 +21,7 @@ function getUserInfo(){
             if(res.status !==0){
                 return layui.layer.msg('failed!')
             }
-            console.log(res);
+            // console.log(res);
             renderAvatar(res.data)
         },
         // complete:function(res){
